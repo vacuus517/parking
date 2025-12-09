@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkovka dasturi</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+     <div class="container">
+    <h2>PARKOVKA TEKSHIRUVI</h2>
+
+    <div class="license-plate-container">
+        <input type="text" id="region" maxlength="2" placeholder="01" autocomplete="off">
+        <input type="text" id="series" maxlength="1" placeholder="A" autocomplete="off">
+        <input type="text" id="number" maxlength="3" placeholder="123" autocomplete="off">
+        <input type="text" id="suffix" maxlength="2" placeholder="AA" autocomplete="off">
+        <div class="flag">
+            <img src="icon/uzbekistan_icon_127901.svg" alt="UZ">
+            <span>UZ</span>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="refreshBtn">Yangilash</button>
+        <button id="checkBtn">Tekshirish</button>
+    </div>
+
+    <div id="message"></div>
+</div>
+
+
+    <script src="API/data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
